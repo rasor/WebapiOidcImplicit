@@ -17,7 +17,7 @@ namespace OwinWebapiOidcImplicitGoogle
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
 
             // http://appetere.com/post/getting-started-with-openid-connect 
-            app.SetDefaultSignInAsAuthenticationType("External Bearer");
+            app.SetDefaultSignInAsAuthenticationType("External Bearer"); 
 
             var notifications = new OpenIdConnectAuthenticationNotifications()
             {
@@ -77,6 +77,7 @@ namespace OwinWebapiOidcImplicitGoogle
                 // Don't redirect outgoing 401 to login
                 AuthenticationMode = AuthenticationMode.Passive
             });
+            DebugOwin(app, "2", "Oidc");
         }
     }
 }

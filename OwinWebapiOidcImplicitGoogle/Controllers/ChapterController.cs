@@ -8,6 +8,8 @@ using System.Web.Http;
 namespace OwinWebapiOidcImplicitGoogle.Controllers
 {
     [Authorize]
+    // [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
+    [HostAuthentication("External Bearer")]
     public class ChapterController : ApiController
     {
         // GET api/<controller>

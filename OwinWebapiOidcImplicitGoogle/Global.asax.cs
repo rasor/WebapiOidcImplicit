@@ -11,7 +11,8 @@ namespace OwinWebapiOidcImplicitGoogle
     {
         protected void Application_Start()
         {
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            //replaced by app.UseWebApi
+            //GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
 }
