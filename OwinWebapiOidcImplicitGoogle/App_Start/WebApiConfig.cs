@@ -20,8 +20,9 @@ namespace OwinWebapiOidcImplicitGoogle
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            config.Formatters.JsonFormatter.UseDataContractJsonSerializer = true;
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            // moved to OWIN, so also auth will return JSON - startup.cs
+            //config.Formatters.JsonFormatter.UseDataContractJsonSerializer = true;
+            //config.Formatters.Remove(config.Formatters.XmlFormatter);
         }
     }
 }

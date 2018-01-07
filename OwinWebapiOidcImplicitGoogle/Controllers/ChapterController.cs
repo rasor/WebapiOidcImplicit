@@ -7,6 +7,7 @@ using System.Web.Http;
 
 namespace OwinWebapiOidcImplicitGoogle.Controllers
 {
+    [Authorize]
     public class ChapterController : ApiController
     {
         // GET api/<controller>
